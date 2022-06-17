@@ -1,0 +1,13 @@
+#define SPEED_FWD 75
+#define SPEED_REV 60
+#define WAIT_TIME 500
+#define DEGREES -90
+
+task main(){
+     SetSensor(IN_1,SENSOR_TOUCH);
+     //Fwd(OUT_A,SPEED_FWD);
+     //Wait(WAIT_TIME);
+     //OnRev(OUT_A,SPEED_REV);
+     until(SENSOR_1 == true);
+     RotateMotor(OUT_A,SPEED_FWD,DEGREES);
+}
